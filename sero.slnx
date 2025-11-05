@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="sero/sero.vcxproj" />
+  <Project Path="sero/sero.vcxproj" Id="28dfb1ab-5a77-40b7-9d00-2b63f68912ba" />
 </Solution>
