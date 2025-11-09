@@ -137,6 +137,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base64.h" />
+    <ClInclude Include="block.hpp" />
+    <ClInclude Include="picosha2.h" />
     <ClInclude Include="pqsign.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -16,6 +16,9 @@ namespace pqsign
 		uint8_t* secret_key;
 		uint8_t* public_key;
 		OQS_SIG* sig;
+
+		std::string b64_secret;
+		std::string b64_public;
 	};
 
 	__forceinline uint8_t* str_to_u8(const std::string& str)
@@ -64,6 +67,10 @@ namespace pqsign
 		pair.sig = sig;
 		pair.public_key = public_key;
 		pair.secret_key = secret_key;
+
+		pair.b64_public = macaron::Base64::Encode(pqsign::u8_to_str(pair.public_key, pair.sig->length_public_key));
+		pair.b64_secret = macaron::Base64::Encode(pqsign::u8_to_str(pair.secret_key, pair.sig->length_secret_key));
+
 		return pair;
 	}
 

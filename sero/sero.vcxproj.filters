@@ -26,5 +26,11 @@
     <ClInclude Include="pqsign.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="block.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="picosha2.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
